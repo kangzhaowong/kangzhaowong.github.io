@@ -42,6 +42,35 @@ body {
     color: var(--color-white);
 }
 
+.navigation-container {
+    position: absolute;
+    display: flex;
+    gap:2vw;
+    width: fit-content;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+    font-size: max(0.7rem,1vw);
+    transform: translate(5vw,5vw);
+    background-color: var(--color-white);
+    color: var(--color-mallard);
+}
+
+.introduction-image {
+    position: absolute;
+    transform: translate(60vw,0vw);
+    width:25.5vw;
+}
+
+.introduction-text {
+    position: absolute;
+    width: 50vw;
+    transform: translateX(5vw) translateY(15vw);
+    font-size: max(0.8rem,3.3vw);
+    font-weight: bold;
+}
+
 .introduction-highlighted-text {
     color: var(--color-mandarin-red);
 }
