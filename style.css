@@ -59,8 +59,9 @@ body {
 
 .introduction-image {
     position: absolute;
-    transform: translate(60vw,0vw);
-    width:25.5vw;
+    transform: translateX(57vw);
+    /* width:25.5vw; */
+    height: 100%;
 }
 
 .introduction-text {
