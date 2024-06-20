@@ -11,7 +11,6 @@
     --color-background: #222222;
     --color-text: #D1C2BC;
     --color-highlight: #E64833;
-
 }
 
 body {
@@ -21,7 +20,14 @@ body {
     padding: 0;
     background-color: var(--color-background);
     color: var(--color-text);
+}
+
+.scroller {
+    overflow-y: scroll;
     overflow-x: hidden;
+    height: 100vh;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
 }
 
 .highlighted-text {
@@ -33,12 +39,27 @@ body {
     height: 100vh;
     /* margin-bottom: 10vh; */
     overflow-y: hidden;
+    scroll-snap-align: start;
 }
 
 .image-container {
     background-position: center;
     background-size: cover;
     opacity: 0.5;
+}
+
+.linear-grad-top-bottom {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 1px -10rem 20rem -1rem var(--color-background), inset 1px 10rem 20rem -1rem var(--color-background);
+}
+
+.linear-grad-bottom {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 1px -10rem 20rem -1rem var(--color-background);
 }
 
 /* Start Page */
