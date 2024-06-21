@@ -11,11 +11,20 @@
     --color-background: #222222;
     --color-text: #D1C2BC;
     --color-highlight: #E64833;
+    --color-carosell-background: rgba(209,194,188,0.13);
+    --fontsize-very-small: max(1rem,1vw);
+    --fontsize-small: max(1.4rem,1.5vw);
+    --fontsize-large: max(4rem,7vw);
+    --fontsize-medium: max(2rem,2.5vw);
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
     font-family: "Roboto", sans-serif;
-    font-size: max(1.4rem,1.5vw);
+    font-size: var(--fontsize-small);
     margin: 0;
     padding: 0;
     background-color: var(--color-background);
@@ -75,14 +84,14 @@ body {
 }
 
 #start-content-container > .highlighted-text {
-    font-size: max(4rem,7vw);
+    font-size: var(--fontsize-large);
     font-weight: bold;
 }
 
 #start-content-container > #start-arrow-down {
     color: var(--color-text);
     padding: 1rem;
-    font-size: max(2rem,2.5vw);
+    font-size: var(--fontsize-medium);
     animation: blink 2s linear infinite;
 }
 
@@ -98,9 +107,9 @@ body {
 }
 
 #intro-content-container > .content-text {
-    font-size: max(2rem,3.5vw);
+    font-size: var(--fontsize-medium);
     height: 100%;
-    transform: translateY(30%);
+    margin-top:30vh;
 }
 
 /* Interests Page */
@@ -121,7 +130,7 @@ body {
     flex-wrap: wrap;
     gap:1rem;
     margin-top:2vh;
-    font-size: max(1rem,1.2vw);
+    font-size: var(--fontsize-small);
 }
 
 #interests-content-container > .content-text > * {
@@ -144,6 +153,27 @@ body {
     transform: translateY(-100%);
 }
 
+#club-content-container > .content-text {
+    width: 100%;
+    margin-top:5vh;
+}
+
+#club-content-container > .content-text > * {
+    padding-bottom: 5vh;
+}
+
+#club-content-container > .content-text > * > text {
+    padding-bottom: 2vh;
+}
+
+.seperator-line {
+    width:100%;
+    height: 0.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--color-text);
+}
+
 /* Project Page*/
 .project-page {
     height: 100%;
@@ -151,9 +181,161 @@ body {
 
 #project-content-container {
     height: 100%;
-    margin: 5vw;
+    margin-top: 5vw;
     transform: translateY(-100%);
 }
+
+#project-content-container > .content-text {
+    width: 100%;
+    height: 70%;
+    margin-top: 2.5vw;
+    background-color: var(--color-carosell-background);
+}
+
+#project-content-container > text {
+    padding-left: 5vw;
+}
+
+#project-content-container * > .project-info {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+#project-content-container * > .project-info-text {
+    padding: 10%;
+}
+
+#project-content-container * > .project-info-background {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#project-content-container * > .project-info-text-container {
+    height: 100%;
+    width: 100%;
+    transform: translateY(-100%);
+    align-content: center;
+}
+
+#project-content-container * > .project-info:hover {
+    opacity: 1;
+}
+
+
+#project-content-container * > .project-tag {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:0.5rem;
+    gap:0.5rem;
+    width: 100%;
+    font-size: var(--fontsize-very-small);
+}
+
+#project-content-container * > .project-tag > * {
+    flex-grow: 0;
+    border-color: var(--color-text);
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+#project-content-container * > .project-info-button {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#project-content-container * > button {
+    background-color: var(--color-highlight);
+    color: var(--color-text);
+    padding: 0.5rem;
+    border:0;
+}
+
+#project-content-container * > .main-carousel {
+    height: 100%;
+    transform: translateY(15%);
+}
+
+#project-content-container * > .carousel-cell {
+    margin-right: 5%;
+    height: min(60%,50vh);
+    aspect-ratio: 1;
+}
+
+#project-content-container * > .carousel-cell.is-selected {
+    margin-right: 5%;
+    height: min(100%,50vh);
+    aspect-ratio: 1;
+}
+
+#project-content-container * > .flickity-page-dots .dot {
+    background: var(--color-text);
+    opacity: 1;
+}
+
+#project-content-container * > .flickity-page-dots {
+    bottom: unset;
+}
+
+#project-content-container * > .flickity-page-dots .dot.is-selected {
+    background: var(--color-highlight);
+}
+
+#project-content-container * >  .flickity-slider {
+    display: grid;
+    align-items: center;
+}
+
+#project-card-1 {
+    background-image: url(assets/img/homepage/project_front_1.png);
+    background-size: contain;
+}
+
+#project-card-2 {
+    background-image: url(assets/img/homepage/project_front_2.png);
+    background-size: contain;
+}
+
+#project-card-3 {
+    background-image: url(assets/img/homepage/project_front_3.png);
+    background-size: contain;
+}
+
+#project-card-4 {
+    background-image: url(assets/img/homepage/project_front_4.png);
+    background-size: contain;
+}
+
+#project-card-5 {
+    background-image: url(assets/img/homepage/project_front_5.png);
+    background-size: contain;
+}
+
+#project-card-6 {
+    background-image: url(assets/img/homepage/project_front_6.png);
+    background-size: contain;
+}
+
+#project-card-7 {
+    background-image: url(assets/img/homepage/project_front_7.png);
+    background-size: contain;
+}
+
+#project-card-8 {
+    background-image: url(assets/img/homepage/project_front_8.png);
+    background-size: contain;
+}
+
+#project-card-9 {
+    background-image: url(assets/img/homepage/project_front_9.png);
+    background-size: contain;
+}
+
 
 /* History Page*/
 .history-page {
@@ -164,6 +346,25 @@ body {
     height: 100%;
     margin: 5vw;
     transform: translateY(-100%);
+}
+
+#history-content-container > .content-text {
+    width: 100%;
+    height: 75%;
+    margin-top:5vh;
+    overflow-y: scroll;
+}
+
+#history-content-container > .content-text > * {
+    padding-bottom: 5vh;
+}
+
+#history-content-container > .content-text > * > text {
+    padding-bottom: 2vh;
+}
+
+#history-content-container * > .description-text {
+    font-size: var(--fontsize-very-small);
 }
 
 /* Awards Page*/
@@ -177,6 +378,17 @@ body {
     height: 100%;
     margin: 5vw;
     transform: translateY(-100%);
+}
+
+#awards-content-container > .content-text {
+    width: 100%;
+    height: 75%;
+    margin-top:5vh;
+    overflow-y: scroll;
+}
+
+#awards-content-container * > td {
+    padding-bottom: 1rem;
 }
 
 /* Contact Page*/
@@ -194,7 +406,7 @@ body {
     text-align: center;
     height: 100%;
     transform: translateY(25%);
-    font-size:max(1.2rem,1.5vw);
+    font-size: var(--fontsize-small);
 }
 
 #contact-content-container > .content-text > .highlighted-text {

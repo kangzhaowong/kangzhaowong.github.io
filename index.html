@@ -2,6 +2,12 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="scripts.js"></script>
   </head>
   <body>
     <div class="scroller">
@@ -50,15 +56,131 @@
         <div class="club-page image-container"></div>
         <div id="club-content-container">
           <text>CLUB INVOLVEMENT</text><br />
+          <div class="content-text">
+            <div>
+              <text>Leadership & Event Planning</text>
+              <div class="seperator-line"></div>
+              <text style="font-style: italic"
+                >SUTD Student Association Council<br />SUTD Greenprint</text
+              >
+            </div>
+            <div>
+              <text>Robotics</text>
+              <div class="seperator-line"></div>
+              <text style="font-style: italic"
+                >SUTD Organization of Autonomous Robotics (SOAR)</text
+              >
+            </div>
+            <div>
+              <text>Sports</text>
+              <div class="seperator-line"></div>
+              <text style="font-style: italic"
+                >Table Tennis<br />Badminton</text
+              >
+            </div>
+          </div>
         </div>
       </div>
       <div class="page-container">
         <div class="project-page image-container"></div>
-        <div id="project-content-container"><text>PROJECTS</text><br /></div>
+        <div id="project-content-container">
+          <text>PROJECTS</text><br />
+          <div class="content-text">
+            <div
+              class="main-carousel"
+              data-flickity='{ "cellAlign": "center", "prevNextButtons": false, "resize": false}'
+            >
+              <div class="carousel-cell" id="project-card-1">
+                <div class="project-info">
+                  <div class="project-info-background"></div>
+                  <div class="project-info-text-container">
+                    <div class="project-info-text">
+                      <text>Click & Go! Bicycle Lock</text>
+                      <div class="project-tag">
+                        <text>Materials Testing</text
+                        ><text>App Development</text>
+                      </div>
+                      <div class="project-info-button">
+                        <button>Learn More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell" id="project-card-2"></div>
+              <div class="carousel-cell" id="project-card-3"></div>
+              <div class="carousel-cell" id="project-card-4"></div>
+              <div class="carousel-cell" id="project-card-5"></div>
+              <div class="carousel-cell" id="project-card-6"></div>
+              <div class="carousel-cell" id="project-card-7"></div>
+              <div class="carousel-cell" id="project-card-8"></div>
+              <div class="carousel-cell" id="project-card-9"></div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="page-container">
         <div class="history-page image-container"></div>
-        <div id="history-content-container"><text>HISTORY</text><br /></div>
+        <div id="history-content-container">
+          <text>HISTORY</text><br />
+          <div class="content-text">
+            <div>
+              <text
+                ><span class="highlighted-text">2021 - Present</span> Singapore
+                University of Technology and Design (SUTD)</text
+              ><br />
+              <div class="seperator-line"></div>
+              <text style="font-style: italic" class="description-text"
+                >Bachelor of Engineering (4.82 CGPA)<br />
+                Focus Track: Beyond Industry 4.0<br />
+                Expected Date of Graduation: 02 May 2025<br />
+              </text>
+            </div>
+            <div>
+              <text
+                ><span class="highlighted-text">2023</span> Systems on Silicon
+                Manufacturing (SSMC)</text
+              ><br />
+              <div class="seperator-line"></div>
+              <text style="font-style: italic" class="description-text"
+                >Worked as an intern in the Reliability Assurance Section under
+                the Quality & Engineering Division <br />
+                Performed reliability tests such as electromigration test,
+                voltage threshold stability test, and hot carrier injection
+                test<br />
+                Completed projects in R-programming, resulting in a 85% decrease
+                in time taken for the given administrative task per quarter<br />
+                Completed projects in Excel VBA, resulting in a 97% reduction in
+                the time taken to process and analyze their data per lot<br />
+              </text>
+            </div>
+            <div>
+              <text
+                ><span class="highlighted-text">2016 - 2019</span> Nanyang
+                Polytechnic (NYP)</text
+              ><br />
+              <div class="seperator-line"></div>
+              <text style="font-style: italic" class="description-text"
+                >Diploma in Nanotechnology & Material Science with Merit (4.0
+                CGPA)<br />
+                Diploma Plus in Mathematics<br />
+              </text>
+            </div>
+            <div>
+              <text
+                ><span class="highlighted-text">2019</span> ST Engineering</text
+              ><br />
+              <div class="seperator-line"></div>
+              <text style="font-style: italic" class="description-text"
+                >Worked as an intern in Advanced Composite Workshop (ACW) under
+                Chief Technology Officer Office (CTOO)<br />
+                Initiated new composite material fabrication project<br />
+                Handled fabrication and testing of composites using FESEM,
+                Tensile/Compression Tester Machine<br />
+              </text>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="page-container">
         <div class="awards-page image-container">
@@ -66,6 +188,72 @@
         </div>
         <div id="awards-content-container">
           <text>AWARDS & SCHOLARSHIPS</text><br />
+          <div class="content-text">
+            <table>
+              <tr>
+                <td class="highlighted-text">2021 - Present</td>
+                <td style="padding-left: 2rem">
+                  SUTD Global Distinguished Scholarship
+                </td>
+              </tr>
+              <tr>
+                <td class="highlighted-text">2023</td>
+                <td style="padding-left: 2rem">
+                  Makino Asia Global Exchange Award
+                </td>
+              </tr>
+              <tr>
+                <td class="highlighted-text">2023</td>
+                <td style="padding-left: 2rem">
+                  SUTD Honors List for Sophomore & Junior Terms TRIMESTER 2
+                </td>
+              </tr>
+              <tr>
+                <td class="highlighted-text">2016 - 2019</td>
+                <td style="padding-left: 2rem">NYP-ST Scholarship</td>
+              </tr>
+              <tr>
+                <td class="highlighted-text">2019</td>
+                <td style="padding-left: 2rem">RF360 Singapore Silver Medal</td>
+              </tr>
+              <tr>
+                <td class="highlighted-text">2018 - 2019</td>
+                <td style="padding-left: 2rem">
+                  Director's List in Program P6
+                </td>
+              </tr>
+              <tr>
+                <td class="highlighted-text">2018 - 2019</td>
+                <td style="padding-left: 2rem">
+                  Director's List in Program P5
+                </td>
+              </tr>
+              <tr>
+                <td class="highlighted-text">2017 - 2018</td>
+                <td style="padding-left: 2rem">
+                  Director's List & Top Student in Program P4
+                </td>
+              </tr>
+              <tr>
+                <td class="highlighted-text">2017 - 2018</td>
+                <td style="padding-left: 2rem">
+                  Director's List & Top Student in Program P2
+                </td>
+              </tr>
+              <tr>
+                <td class="highlighted-text">2016 - 2017</td>
+                <td style="padding-left: 2rem">
+                  Director's List & Top Student in Program P3
+                </td>
+              </tr>
+              <tr>
+                <td class="highlighted-text">2016 - 2017</td>
+                <td style="padding-left: 2rem">
+                  Director's List & Top Student in Program CORE 1
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
       <div class="page-container">
