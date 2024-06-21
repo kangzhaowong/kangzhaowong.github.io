@@ -19,7 +19,16 @@
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
 
 body {
@@ -47,7 +56,7 @@ body {
     width: 100vw;
     height: 100vh;
     /* margin-bottom: 10vh; */
-    overflow-y: hidden;
+    overflow: hidden;
     scroll-snap-align: start;
 }
 
@@ -219,7 +228,7 @@ body {
     align-content: center;
 }
 
-#project-content-container * > .project-info:hover {
+#project-content-container * > .is-selected > .project-info:hover {
     opacity: 1;
 }
 
@@ -249,7 +258,7 @@ body {
     justify-content: flex-end;
 }
 
-#project-content-container * > button {
+#project-content-container * > .project-info-button > button {
     background-color: var(--color-highlight);
     color: var(--color-text);
     padding: 0.5rem;
@@ -280,6 +289,7 @@ body {
 
 #project-content-container * > .flickity-page-dots {
     bottom: unset;
+    margin-top: 1rem;
 }
 
 #project-content-container * > .flickity-page-dots .dot.is-selected {
@@ -291,49 +301,73 @@ body {
     align-items: center;
 }
 
+#project-content-container * > .flickity-prev-next-button.previous {
+    width: 30%;
+    height: 75%;
+    border-radius: 0;
+    transform: translate(-10%,-70%);
+}
+
+#project-content-container * > .flickity-prev-next-button.next {
+    width: 30%;
+    height: 75%;
+    border-radius: 0;
+    transform: translate(10%,-70%);
+}
+
+#project-content-container * > .flickity-button.previous {
+    background: transparent !important;
+    color: transparent;
+}
+
+#project-content-container * > .flickity-button.next {
+    background: transparent !important;
+    color: transparent;
+}
+
 #project-card-1 {
     background-image: url(assets/img/homepage/project_front_1.png);
-    background-size: contain;
+    background-size: cover;
 }
 
 #project-card-2 {
     background-image: url(assets/img/homepage/project_front_2.png);
-    background-size: contain;
+    background-size: cover;
 }
 
 #project-card-3 {
     background-image: url(assets/img/homepage/project_front_3.png);
-    background-size: contain;
+    background-size: cover;
 }
 
 #project-card-4 {
     background-image: url(assets/img/homepage/project_front_4.png);
-    background-size: contain;
+    background-size: cover;
 }
 
 #project-card-5 {
     background-image: url(assets/img/homepage/project_front_5.png);
-    background-size: contain;
+    background-size: cover;
 }
 
 #project-card-6 {
     background-image: url(assets/img/homepage/project_front_6.png);
-    background-size: contain;
+    background-size: cover;
 }
 
 #project-card-7 {
     background-image: url(assets/img/homepage/project_front_7.png);
-    background-size: contain;
+    background-size: cover;
 }
 
 #project-card-8 {
     background-image: url(assets/img/homepage/project_front_8.png);
-    background-size: contain;
+    background-size: cover;
 }
 
 #project-card-9 {
     background-image: url(assets/img/homepage/project_front_9.png);
-    background-size: contain;
+    background-size: cover;
 }
 
 
@@ -354,6 +388,10 @@ body {
     margin-top:5vh;
     overflow-y: scroll;
 }
+
+#history-content-container  > .content-text::-webkit-scrollbar {
+    display: none;
+} 
 
 #history-content-container > .content-text > * {
     padding-bottom: 5vh;
@@ -386,6 +424,10 @@ body {
     margin-top:5vh;
     overflow-y: scroll;
 }
+
+#awards-content-container  > .content-text::-webkit-scrollbar {
+    display: none;
+} 
 
 #awards-content-container * > td {
     padding-bottom: 1rem;
