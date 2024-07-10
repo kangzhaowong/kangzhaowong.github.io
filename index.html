@@ -10,8 +10,34 @@
     <script src="scripts.js"></script>
   </head>
   <body>
+    <div class="menu">
+      <div
+        class="menu-option"
+        onclick="document.getElementById('start-page-anchor').scrollIntoView(true);"
+      >
+        Home
+      </div>
+      <div
+        class="menu-option"
+        onclick="document.getElementById('project-page-anchor').scrollIntoView(true);"
+      >
+        Projects
+      </div>
+      <div
+        class="menu-option"
+        onclick="document.getElementById('timeline-page-anchor').scrollIntoView(true);"
+      >
+        Timeline
+      </div>
+      <div
+        class="menu-option"
+        onclick="document.getElementById('contacts-page-anchor').scrollIntoView(true);"
+      >
+        Contacts
+      </div>
+    </div>
     <div class="scroller">
-      <div class="page-container">
+      <div class="page-container" id="start-page-anchor">
         <div class="start-page image-container">
           <div class="linear-grad-bottom"></div>
         </div>
@@ -81,14 +107,14 @@
           </div>
         </div>
       </div>
-      <div class="page-container">
+      <div class="page-container" id="project-page-anchor">
         <div class="project-page image-container"></div>
         <div id="project-content-container">
-          <text>PROJECTS</text><br />
+          <text>MY PROJECTS</text><br />
           <div class="content-text">
             <div
               class="main-carousel"
-              data-flickity='{ "cellAlign": "center", "resize": false}'
+              data-flickity='{ "cellAlign": "center", "resize": false, prevNextButtons: false}'
             >
               <div class="carousel-cell" id="project-card-1">
                 <div class="project-info">
@@ -97,11 +123,14 @@
                     <div class="project-info-text">
                       <text>Floom Interactive Shelter</text>
                       <div class="project-tag">
-                        <text>Materials Testing</text
-                        ><text>App Development</text>
+                        <text>Rhino</text><text>Grasshopper</text>
+                        <text>SolidWorks</text>
+                        <text>Geometry Optimization</text>
+                        <text>Architecture</text>
+                        <text>Origami Mechanisms</text>
                       </div>
                       <div class="project-info-button">
-                        <button>Learn More</button>
+                        <a href="project_floom.html"> Learn More </a>
                       </div>
                     </div>
                   </div>
@@ -114,11 +143,10 @@
                     <div class="project-info-text">
                       <text>Electromagnetic Gun</text>
                       <div class="project-tag">
-                        <text>Materials Testing</text
-                        ><text>App Development</text>
+                        <text>Electromagnetism</text><text>3D Printing</text>
                       </div>
                       <div class="project-info-button">
-                        <button>Learn More</button>
+                        <a href="project_em_launcher.html"> Learn More </a>
                       </div>
                     </div>
                   </div>
@@ -131,11 +159,20 @@
                     <div class="project-info-text">
                       <text>Click & Go! Bicycle Lock</text>
                       <div class="project-tag">
-                        <text>Materials Testing</text
-                        ><text>App Development</text>
+                        <text>Materials Fabrication</text
+                        ><text>Materials Testing</text>
+                        <text>Unity</text>
+                        <text>C#</text>
+                        <text>GPS</text>
+                        <text>Database</text>
+                        <text>Firebase</text>
+                        <text>HTML</text>
+                        <text>JavaScript</text>
+                        <text>Leaflet Maps</text>
+                        <text>Arduino Programming</text>
                       </div>
                       <div class="project-info-button">
-                        <button>Learn More</button>
+                        <a href="project_click&go.html"> Learn More </a>
                       </div>
                     </div>
                   </div>
@@ -148,11 +185,12 @@
                     <div class="project-info-text">
                       <text>2D Heat Equation Simulation</text>
                       <div class="project-tag">
-                        <text>Materials Testing</text
-                        ><text>App Development</text>
+                        <text>Heat Equation</text><text>Simulation</text>
+                        <text>Python</text>
+                        <text>Numerical Methods</text>
                       </div>
                       <div class="project-info-button">
-                        <button>Learn More</button>
+                        <a href="project_2d_heat_equation.html"> Learn More </a>
                       </div>
                     </div>
                   </div>
@@ -163,13 +201,16 @@
                   <div class="project-info-background"></div>
                   <div class="project-info-text-container">
                     <div class="project-info-text">
-                      <text>Bio-Robot Research Project</text>
+                      <text>Bird Deterrance</text>
                       <div class="project-tag">
-                        <text>Materials Testing</text
-                        ><text>App Development</text>
+                        <text>Electromagnetism</text
+                        ><text>CST Studio Suite</text>
+                        <text>Antenna Fabrication</text>
+                        <text>VNA</text>
+                        <text>Spectrum Analyzer</text>
                       </div>
                       <div class="project-info-button">
-                        <button>Learn More</button>
+                        <a href="project_bird_deterrance.html"> Learn More </a>
                       </div>
                     </div>
                   </div>
@@ -180,13 +221,13 @@
                   <div class="project-info-background"></div>
                   <div class="project-info-text-container">
                     <div class="project-info-text">
-                      <text>Adelle Robot Research Project</text>
+                      <text>Bio-Robot Research Project</text>
                       <div class="project-tag">
-                        <text>Materials Testing</text
-                        ><text>App Development</text>
+                        <text>Prostatic Hand</text><text>3D Modelling</text
+                        ><text>Arduino Programming</text>
                       </div>
                       <div class="project-info-button">
-                        <button>Learn More</button>
+                        <a href="project_brb.html"> Learn More </a>
                       </div>
                     </div>
                   </div>
@@ -197,13 +238,16 @@
                   <div class="project-info-background"></div>
                   <div class="project-info-text-container">
                     <div class="project-info-text">
-                      <text>Retail Invoice Data Management System</text>
+                      <text>Adelle Robot Research Project</text>
                       <div class="project-tag">
-                        <text>Materials Testing</text
-                        ><text>App Development</text>
+                        <text>Mechatronics</text><text>Kinematics</text>
+                        <text>Robotic Arm</text>
+                        <text>Raspberry Pi</text>
+                        <text>Electrical</text>
+                        <text>ROS</text>
                       </div>
                       <div class="project-info-button">
-                        <button>Learn More</button>
+                        <a href="project_adelle.html"> Learn More </a>
                       </div>
                     </div>
                   </div>
@@ -214,15 +258,17 @@
                   <div class="project-info-background"></div>
                   <div class="project-info-text-container">
                     <div class="project-info-text">
-                      <text
-                        >Decentralized App for Monetizing Green Activity</text
-                      >
+                      <text>Retail Invoice Data Management System</text>
                       <div class="project-tag">
-                        <text>Materials Testing</text
-                        ><text>App Development</text>
+                        <text>Machine Learning Models</text
+                        ><text>Optical Character Recognition</text>
+                        <text>Python</text><text>Concurrency</text
+                        ><text>Unit Testing</text>
                       </div>
                       <div class="project-info-button">
-                        <button>Learn More</button>
+                        <a href="project_invoice_data_extraction.html">
+                          Learn More
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -234,15 +280,34 @@
                   <div class="project-info-text-container">
                     <div class="project-info-text">
                       <text
+                        >Decentralized App for Monetizing Green Activity</text
+                      >
+                      <div class="project-tag">
+                        <text>App Development</text><text>Blockchain</text
+                        ><text>Cryptocurrency</text><text>Cryptography</text>
+                      </div>
+                      <div class="project-info-button">
+                        <a href="page_in_progress.html"> Learn More </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell" id="project-card-10">
+                <div class="project-info">
+                  <div class="project-info-background"></div>
+                  <div class="project-info-text-container">
+                    <div class="project-info-text">
+                      <text
                         >Effect of Dropout on the Performance of Different
                         Activation Functions</text
                       >
                       <div class="project-tag">
-                        <text>Materials Testing</text
-                        ><text>App Development</text>
+                        <text>Neural Networks</text><text>Python</text
+                        ><text>Pytorch</text>
                       </div>
                       <div class="project-info-button">
-                        <button>Learn More</button>
+                        <a href="page_in_progress.html"> Learn More </a>
                       </div>
                     </div>
                   </div>
@@ -252,10 +317,10 @@
           </div>
         </div>
       </div>
-      <div class="page-container">
+      <div class="page-container" id="timeline-page-anchor">
         <div class="history-page image-container"></div>
         <div id="history-content-container">
-          <text>HISTORY</text><br />
+          <text>TIMELINE</text><br />
           <div class="content-text">
             <div>
               <text
@@ -389,7 +454,7 @@
           </div>
         </div>
       </div>
-      <div class="page-container">
+      <div class="page-container" id="contacts-page-anchor">
         <div class="contact-page image-container"></div>
         <div id="contact-content-container">
           <text>CONTACT ME</text><br />

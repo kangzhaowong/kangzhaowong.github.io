@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="project-detail-page">
+      <div class="project-title highlighted-text">
+        2D Heat Equation Simulation
+      </div>
+      <div class="project-tags">
+        Tags: Heat Equation, Simulation, Python, Numerical Methods
+      </div>
+      <div class="project-detail-content">
+        <text
+          >For my Computational and Data-Driven Engineering module in term 5, my
+          team was tasked to predict the temperature at the center of an
+          aluminum block that was being cooled by a Thermo-electric Cooler (TEC)
+          controller, using the surface temperature of the aluminum block.</text
+        >
+        <div class="project-image-container single-img">
+          <img src="assets/img/project_pages/2D_heat_equation/image3.png" />
+        </div>
+        <text
+          >For this module, we were constrained to using numerical methods and
+          thus I used the multivariable explicit method where the derivative
+          terms in the heat equation were substituted with first order forward
+          difference and second order central difference. Using python to code
+          the simulation program, I split the simulation space into cells and
+          set the boundary conditions.</text
+        >
+        <div class="project-image-container single-img">
+          <img
+            src="assets/img/project_pages/2D_heat_equation/image22_edited.jpg"
+          />
+        </div>
+        <text
+          >The simulation space was split into a 100 x 100 grid. The
+          temperatures at the edges were locked at 25°C to simulate ambient
+          temperature, the TEC was first locked at 10°C. The air, acrylic and
+          aluminum initially was at ambient temperature. The diffusivity
+          constant of air, acrylic and aluminum were obtained online and used to
+          simulate the temperature changes of each cell in the grid.</text
+        >
+        <div class="project-image-container">
+          <img
+            src="assets/img/project_pages/2D_heat_equation/Screenshot 2024-07-10 130006.png"
+          />
+          <img src="assets/img/project_pages/2D_heat_equation/image18.jpg" />
+        </div>
+        <text
+          >The experiment was also performed and the temperature data was
+          obtained and compared. However, there was a large discrepancy in the
+          results due to the fact that the TEC was not able to keep the
+          temperature at the assumed 10°C. Thus, instead of using a fixed
+          temperature, the simulation was re-run this time using the actual
+          empirical temperature data of the TEC. The result was a similar curve
+          to the actual experiment. The simulated data was then used to predict
+          the temperature at the center of an aluminum block using the surface
+          temperature of the aluminum block.</text
+        >
+        <div class="return-button">
+          <a href="index.html#project-page-anchor">Return</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
