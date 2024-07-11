@@ -33,7 +33,7 @@
         class="menu-option"
         onclick="document.getElementById('contacts-page-anchor').scrollIntoView(true);"
       >
-        Contacts
+        Contact
       </div>
     </div>
     <div class="scroller">
@@ -54,12 +54,17 @@
         <div id="intro-content-container">
           <text>ABOUT ME</text><br />
           <div class="content-text">
-            I’m an aspiring
-            <span class="highlighted-text">materials engineer</span>, passionate
-            about the application of
-            <span class="highlighted-text">robotics</span> and
-            <span class="highlighted-text">artificial intelligence </span>in the
-            field of materials.
+            I'm an aspiring
+            <span class="highlighted-text" style="font-weight: bold">
+              engineer</span
+            >, passionate about research in the latest technologies in
+            <span class="highlighted-text" style="font-weight: bold"
+              >robotics</span
+            >
+            and
+            <span class="highlighted-text" style="font-weight: bold"
+              >artificial intelligence </span
+            >.
           </div>
         </div>
       </div>
@@ -112,11 +117,32 @@
         <div id="project-content-container">
           <text>MY PROJECTS</text><br />
           <div class="content-text">
+            <div class="project-filter-container">
+              <input
+                type="radio"
+                name="project-filter"
+                value="all"
+                onclick="filterProjects()"
+                checked
+              /><label>All</label>
+              <input
+                type="radio"
+                name="project-filter"
+                value="engineering"
+                onclick="filterProjects()"
+              /><label>Engineering</label>
+              <input
+                type="radio"
+                name="project-filter"
+                value="programming"
+                onclick="filterProjects()"
+              /><label>Programming</label>
+            </div>
             <div
               class="main-carousel"
-              data-flickity='{ "cellAlign": "center", "resize": false, prevNextButtons: false}'
+              data-flickity='{ "cellAlign": "center", "resize": false, "prevNextButtons": false, "cellSelector": ".carousel-cell"}'
             >
-              <div class="carousel-cell" id="project-card-1">
+              <div class="carousel-cell engineering" id="project-card-1">
                 <div class="project-info">
                   <div class="project-info-background"></div>
                   <div class="project-info-text-container">
@@ -136,7 +162,7 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-cell" id="project-card-2">
+              <div class="carousel-cell engineering" id="project-card-2">
                 <div class="project-info">
                   <div class="project-info-background"></div>
                   <div class="project-info-text-container">
@@ -152,7 +178,10 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-cell" id="project-card-3">
+              <div
+                class="carousel-cell engineering programming"
+                id="project-card-3"
+              >
                 <div class="project-info">
                   <div class="project-info-background"></div>
                   <div class="project-info-text-container">
@@ -178,7 +207,7 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-cell" id="project-card-4">
+              <div class="carousel-cell engineering" id="project-card-4">
                 <div class="project-info">
                   <div class="project-info-background"></div>
                   <div class="project-info-text-container">
@@ -196,7 +225,7 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-cell" id="project-card-5">
+              <div class="carousel-cell engineering" id="project-card-5">
                 <div class="project-info">
                   <div class="project-info-background"></div>
                   <div class="project-info-text-container">
@@ -216,7 +245,7 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-cell" id="project-card-6">
+              <div class="carousel-cell engineering" id="project-card-6">
                 <div class="project-info">
                   <div class="project-info-background"></div>
                   <div class="project-info-text-container">
@@ -233,7 +262,7 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-cell" id="project-card-7">
+              <div class="carousel-cell engineering" id="project-card-7">
                 <div class="project-info">
                   <div class="project-info-background"></div>
                   <div class="project-info-text-container">
@@ -253,7 +282,7 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-cell" id="project-card-8">
+              <div class="carousel-cell programming" id="project-card-8">
                 <div class="project-info">
                   <div class="project-info-background"></div>
                   <div class="project-info-text-container">
@@ -274,7 +303,7 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-cell" id="project-card-9">
+              <div class="carousel-cell programming" id="project-card-9">
                 <div class="project-info">
                   <div class="project-info-background"></div>
                   <div class="project-info-text-container">
@@ -295,7 +324,7 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-cell" id="project-card-10">
+              <div class="carousel-cell programming" id="project-card-10">
                 <div class="project-info">
                   <div class="project-info-background"></div>
                   <div class="project-info-text-container">

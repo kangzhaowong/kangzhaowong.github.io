@@ -29,7 +29,8 @@
     --color-carosell-background: rgba(209,194,188,0.13);
     --fontsize-very-small: max(1rem,1vw);
     --fontsize-small: max(1.4rem,1.5vw);
-    --fontsize-large: max(4rem,7vw);
+    --fontsize-very-large: max(4rem,7vw);
+    --fontsize-large: max(3rem,5vw);
     --fontsize-medium: max(2rem,2.5vw);
 }
 
@@ -152,7 +153,7 @@ body {
 }
 
 #start-content-container > .highlighted-text {
-    font-size: var(--fontsize-large);
+    font-size: var(--fontsize-very-large);
     font-weight: bold;
 }
 
@@ -178,6 +179,10 @@ body {
     font-size: var(--fontsize-medium);
     height: 100%;
     margin-top:30vh;
+}
+
+#intro-content-container > .content-text > .highlighted-text {
+    font-size: var(--fontsize-large);
 }
 
 /* Interests Page */
@@ -268,6 +273,16 @@ body {
     height: 100%;
     width: 100%;
     opacity: 0;
+}
+
+#project-content-container * > .project-filter-container {
+    position: absolute;
+    padding-left: 5vw;
+    padding-top:2rem;
+}
+
+#project-content-container * > .project-filter-container > text {
+    padding-right: 0.5rem;
 }
 
 #project-content-container * > .project-info-text {
@@ -439,7 +454,7 @@ body {
 }
 
 .project-detail-page > .project-title {
-    font-size: var(--fontsize-large);
+    font-size: var(--fontsize-very-large);
     text-align: center;
     padding-top:5vw;
 }
