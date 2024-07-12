@@ -179,6 +179,7 @@ body {
     font-size: var(--fontsize-medium);
     height: 100%;
     margin-top:30vh;
+    line-height: 3.5rem;
 }
 
 #intro-content-container > .content-text > .highlighted-text {
@@ -215,9 +216,17 @@ body {
     padding: 0.5rem;
 }
 
+#interests-content-container > .content-text > .highlighted-text {
+    border-color: var(--color-highlight);
+    font-weight: bold;
+    border-width: 0.2rem;
+}
+
 /* Club Page*/
 .club-page {
     height: 100%;
+    /* background-image: url("assets/img/homepage/greyscale_club.png");
+    background-position: left top; */
 }
 
 #club-content-container {
@@ -232,11 +241,12 @@ body {
 }
 
 #club-content-container > .content-text > * {
-    padding-bottom: 5vh;
+    padding-bottom: 2rem;
 }
 
 #club-content-container > .content-text > * > text {
-    padding-bottom: 2vh;
+    padding-bottom: 2rem;
+    font-size: var(--fontsize-very-small);
 }
 
 .seperator-line {
@@ -447,7 +457,7 @@ body {
     background-size: cover;
 }
 
-/* Porject Details Page */
+/* Project Details Page */
 
 .project-detail-page {
     font-size: var(--fontsize-small);
@@ -463,6 +473,18 @@ body {
     text-align: center;
     padding-top:1rem;
     padding-bottom: 5rem;
+}
+
+.project-detail-page > .project-header {
+    font-weight: bold;
+}
+
+.project-detail-page * > .link {
+    color: var(--color-text);
+}
+
+.project-detail-page * > .link:visited {
+    color: var(--color-text);
 }
 
 .project-detail-page >.project-detail-content {
