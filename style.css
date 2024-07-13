@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
 
 @keyframes blink {
@@ -10,7 +13,7 @@
 @keyframes fade-in {
     from {
         opacity: 0;
-        scale:0.95;
+        scale:0.9;
     }
     to {
         opacity: 1;
@@ -18,20 +21,16 @@
     }
 }
 
-/* Add menu */
-/* Add media query to change root variables*/
-/* Add project pages */
-
 :root{
     --color-background: #222222;
     --color-text: #D1C2BC;
     --color-highlight: #E64833;
     --color-carosell-background: rgba(209,194,188,0.13);
-    --fontsize-very-small: max(1rem,1vw);
-    --fontsize-small: max(1.4rem,1.5vw);
+    --fontsize-very-small: 1rem;
+    --fontsize-small: 1.4rem;
+    --fontsize-medium: 2.4rem;
+    --fontsize-large: 4rem;
     --fontsize-very-large: max(4rem,7vw);
-    --fontsize-large: max(3rem,5vw);
-    --fontsize-medium: max(2rem,2.5vw);
 }
 
 ::-webkit-scrollbar {
@@ -52,7 +51,7 @@ html {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Lora", sans-serif;;
     font-size: var(--fontsize-small);
     margin: 0;
     padding: 0;
@@ -112,10 +111,9 @@ body {
 .page-container {
     width: 100vw;
     height: 100vh;
-    /* margin-bottom: 10vh; */
     overflow: hidden;
     /* scroll-snap-align: start; */
-    animation-timeline: view(block 100% 0%);
+    animation-timeline: view(block 130% 0%);
     animation-name: fade-in;
     animation-timing-function: linear;
 }
@@ -177,9 +175,11 @@ body {
 
 #intro-content-container > .content-text {
     font-size: var(--fontsize-medium);
+    font-family: 'Cormorant Garamond';
     height: 100%;
     margin-top:30vh;
     line-height: 3.5rem;
+    text-align: center;
 }
 
 #intro-content-container > .content-text > .highlighted-text {
@@ -203,7 +203,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap:1rem;
-    margin-top:2vh;
+    margin-top: 2rem;
     font-size: var(--fontsize-small);
 }
 
@@ -214,6 +214,7 @@ body {
     border-width: 0.1rem;
     border-radius: 0.5rem;
     padding: 0.5rem;
+    background-color: rgba(255,255,255,0.025);
 }
 
 #interests-content-container > .content-text > .highlighted-text {
@@ -237,7 +238,7 @@ body {
 
 #club-content-container > .content-text {
     width: 100%;
-    margin-top:5vh;
+    margin-top: 2rem;
 }
 
 #club-content-container > .content-text > * {
@@ -271,7 +272,7 @@ body {
 #project-content-container > .content-text {
     width: 100%;
     height: 70%;
-    margin-top: 2.5vw;
+    margin-top: 2rem;
     background-color: var(--color-carosell-background);
 }
 
@@ -544,6 +545,12 @@ body {
 }
 
 /* History Page*/
+
+#timeline-page-anchor {
+    overflow-y: auto;
+    height: max-content;
+}
+
 .history-page {
     height: 100%;
 }
@@ -551,13 +558,13 @@ body {
 #history-content-container {
     height: 100%;
     margin: 5vw;
-    transform: translateY(-100%);
 }
 
 #history-content-container > .content-text {
     width: 100%;
-    height: 75%;
-    margin-top:5vh;
+    /* height: 75%; */
+    height: fit-content;
+    margin-top: 2rem;
     overflow-y: scroll;
 }
 
@@ -566,11 +573,11 @@ body {
 } 
 
 #history-content-container > .content-text > * {
-    padding-bottom: 5vh;
+    padding-bottom: 2rem;
 }
 
 #history-content-container > .content-text > * > text {
-    padding-bottom: 2vh;
+    padding-bottom: 2rem;
 }
 
 #history-content-container * > .description-text {
@@ -593,7 +600,7 @@ body {
 #awards-content-container > .content-text {
     width: 100%;
     height: 75%;
-    margin-top:5vh;
+    margin-top: 2rem;
     overflow-y: scroll;
 }
 
