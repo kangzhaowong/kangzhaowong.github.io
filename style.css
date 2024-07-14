@@ -55,6 +55,7 @@ html {
 }
 
 body {
+    width: 100%;
     font-family: "Lora", sans-serif;;
     font-size: var(--fontsize-small);
     margin: 0;
@@ -71,7 +72,7 @@ body {
     display: flex;
     justify-content: flex-end;
     flex-wrap:nowrap;
-    z-index: 1;
+    z-index: 2;
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -357,6 +358,7 @@ body {
     padding-left: var(--margin-sides);
     padding-top:2rem;
     padding-bottom: 2rem;
+    z-index: 1;
 }
 
 #project-content-container * > .project-filter-container > text {
@@ -433,6 +435,7 @@ body {
 #project-content-container * > .main-carousel {
     height: 100%;
     padding-top: min(5rem,10vh);
+    z-index: 0;
 }
 
 #project-content-container * > .carousel-cell {
@@ -587,6 +590,7 @@ body {
     padding:var(--margin-sides);
     text-align: justify;
     background-color: var(--color-carosell-background);
+    word-wrap: break-word;
 }
 
 .project-detail-page > .project-detail-content > .project-image-container {
